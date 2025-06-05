@@ -1,0 +1,51 @@
+/* Netflix Footer Styles */
+.netflix-footer {
+    background-color: #141414;
+    padding: 40px 20px;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: #757575;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* .footer-note {
+    font-size: 13px;
+    color: #757575;
+  } */
+  .colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .colum a{
+    margin-bottom: 20px;
+  }
+  .social-links a{
+    color: white ;
+    margin-right: 10px;
+  }
