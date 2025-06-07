@@ -7,12 +7,12 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 function Header() {
   return (
     <>
-      <header class="header">
+      <header className="header">
         <div className="left-header">
-          <a href="#" class="logo">
+          <a href="#" className="logo">
             NETFLIX
           </a>
-          <nav class="nav-links">
+          <nav className="nav-links">
             <li>
               {" "}
               <a href="#">Home</a>
