@@ -1,13 +1,25 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 function Header() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40); // change header after scrolling 50px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header className="header">
+      <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="left-header">
           <a href="#" className="logo">
             NETFLIX
