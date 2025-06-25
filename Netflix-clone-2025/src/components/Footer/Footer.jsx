@@ -8,7 +8,7 @@ function Footer() {
     <>
       <footer className="netflix-footer">
         <div className="footer-container">
-          <div className="footer-links">
+          <div className="footer-links row">
             <div className="colum">
               <div className="social-links">
                 <a href="">

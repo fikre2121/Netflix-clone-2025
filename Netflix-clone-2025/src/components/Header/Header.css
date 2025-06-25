@@ -54,3 +54,11 @@
 .sign-in:hover {
   background-color: #f40612;
 }
+
+/* resposnsiveness */
+@media (max-width: 768px) {
+  
+ .nav-links{
+  display: none;
+ }
+}
